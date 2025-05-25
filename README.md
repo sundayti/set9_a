@@ -8,7 +8,7 @@
 - **msd** — чистый MSD Radix Sort (посылка 321243923)
 - **msd_hybrid** — гибрид MSD Radix Sort + QuickSort (посылка 3212582710)
 - **string_merge** — MergeSort с LCP-оптимизацией (посылка 321299859)
-- **ternary_quick** — тернарный QuickSort (посылка 3212296210
+- **ternary_quick** — тернарный QuickSort (посылка 3212296210)
 
 ---
 
