@@ -1,1 +1,53 @@
-# set9_a
+# Сравнение алгоритмов сортировки строк
+
+Ниже приведены четыре графика с результатами измерений времени работы разных алгоритмов на массивах строк разных типов.  
+На всех графиках присутствуют следующие алгоритмы:
+
+- **msd** — чистый MSD Radix Sort  
+- **msd_hybrid** — гибрид MSD Radix Sort + String QuickSort  
+- **std_merge** — стандартный MergeSort  
+- **std_quick** — стандартный QuickSort 
+- **string_merge** — MergeSort с LCP-оптимизацией  
+- **ternary_quick** — тернарный QuickSort 
+
+---
+
+## 1. Случайные массивы  
+![random_comparison](https://github.com/user-attachments/assets/40ab1467-2928-44cd-9776-0ac35d8673bf)
+
+На полностью случайных строках:
+
+- **msd_hybrid** самый быстрым благодаря удачному сочетанию Radix и QuickSort.  
+
+---
+
+## 2. Уже отсортированные массивы  
+![sorted_comparison](https://github.com/user-attachments/assets/446c72d2-f7ec-41af-8e90-bc6bf1a9a08e)
+
+На уже отсортированных данных:
+
+- **msd_hybrid** сохраняет лидерство  
+
+---
+
+## 3. Обратно отсортированные массивы  
+![reverse_comparison](https://github.com/user-attachments/assets/8f4a0796-06d5-4842-a7fc-964a7f21525b)
+
+При обратном порядке:
+
+- **msd_hybrid** снова лучший и устойчивый
+
+---
+
+## 4. Массивы с общим префиксом  
+![common_prefix_comparison](https://github.com/user-attachments/assets/e61f29df-19de-4986-9c86-8dccb10d5b81)
+
+При большом общем префиксе всех строк:
+
+- **string_merge** благодаря LCP-меткам растёт очень медленно и лидирует.  
+
+---
+## Выводы:
+Как видно по тестам в большинстве случаев самым оптимальным алгоритмом является гибрид MSDRadixSort и QuickSort
+
+*Все измерения выполнялись на массивах от 100 до 3000 строк (с шагом 100), строки длиной 10–200 символов, усреднённые по 5 запускам.*  
