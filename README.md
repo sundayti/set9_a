@@ -3,12 +3,12 @@
 Ниже приведены четыре графика с результатами измерений времени работы разных алгоритмов на массивах строк разных типов.  
 На всех графиках присутствуют следующие алгоритмы:
 
-- **msd** — чистый MSD Radix Sort  
-- **msd_hybrid** — гибрид MSD Radix Sort + String QuickSort  
 - **std_merge** — стандартный MergeSort  
 - **std_quick** — стандартный QuickSort 
-- **string_merge** — MergeSort с LCP-оптимизацией  
-- **ternary_quick** — тернарный QuickSort 
+- **msd** — чистый MSD Radix Sort (посылка 321243923)
+- **msd_hybrid** — гибрид MSD Radix Sort + String QuickSort (посылка 3212582710)
+- **string_merge** — MergeSort с LCP-оптимизацией (посылка 321299859)
+- **ternary_quick** — тернарный QuickSort (посылка 3212296210
 
 ---
 
